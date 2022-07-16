@@ -1,0 +1,25 @@
+<div class="">
+    <h3 class="text-center">Registrar Personas</h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label>ID: </label>
+            <input type="number" class="form-control" id="idpersonas" [(ngModel)] = "persona.idpersonas" name="idpersonas">
+        </div>
+        <div class="form-group">
+            <label>NOMBRE: </label>
+            <input type="text" class="form-control" id="namepersonas" [(ngModel)] = "persona.namepersonas" name="namepersonas">
+        </div>
+        <div class="form-group">
+            <label>CORREO: </label>
+            <input type="email" class="form-control" id="correopersonas" [(ngModel)] = "persona.correopersonas" name="correopersonas">
+        </div>
+        <div class="form-group">
+            <label>EDAD: </label>
+            <input type="number" class="form-control" id="edadpersonas" [(ngModel)] = "persona.edadpersonas" name="edadpersonas">
+        </div>
+        <button class="btn btn-success">Guardar</button>
+
+
+    </form>
+
+</div>
